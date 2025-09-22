@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:#DBC2A6;
+            }
+            .header{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                height:40px;
+                background-color: #414A37;
+                border-radius: 10px;
+                color:#DBC2A6;
+
+            }
+            .Para{
+                display: flex;
+                
+                margin-top:8px;
+                background-color: #414A37;
+                border-radius: 10px;
+                height:200px;
+            }
+            .Paragraph{
+                display: flex;
+                border-radius: 10px;
+                background-color: #DBC2A6;
+                height: 80%;
+                max-width: 100%;
+                overflow-x: auto;
+                margin-left: 16px;
+                padding:10px;
+                color: #414A37;
+                max-height: 110px;
+                overflow-y:auto;
+
+                
+            }
+            .Paragraph::-webkit-scrollbar{
+                background-color: #414A37;
+                border-radius: 10px;
+                width:20px;
+            }
+            .Paragraph::-webkit-scrollbar-track{
+                background-color: #414A37;
+                
+            }
+            .Paragraph::-webkit-scrollbar-thumb{
+                background-color: #DBC2A6;
+                border-radius: 3px;
+                width:10px;
+            }
+            .Ques{
+                background-color: #414A37;
+                border-radius: 10px;
+                margin-top:8px;
+                margin-bottom:8px;
+                display: flex;
+                height:200px;
+                width:300px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+            <div class="header">
+                <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">QuestGen</h2>
+            </div>
+            <div class ="Para">
+                <form action="/gen" method="post">
+                    <h3 style="margin-left: 10px;font-family: 'Courier New', Courier, monospace; color:#DBC2A6">
+                        Enter the Paragrapgh here:
+                    </h3>
+                    <div contenteditable="true" class="Paragraph">
+
+                    </div>
+                </form>
+            </div>
+            <div class="Ques">
+                
+            </div>
+        
+    </body>
+</html>
