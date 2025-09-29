@@ -17,6 +17,7 @@
             }
             .Para{
                 display: flex;
+                flex-direction: column;
                 
                 margin-top:8px;
                 background-color: #414A37;
@@ -70,17 +71,18 @@
                 <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">QuestGen</h2>
             </div>
             <div class ="Para">
-                <form action="/gen" method="post">
-                    <h3 style="margin-left: 10px;font-family: 'Courier New', Courier, monospace; color:#DBC2A6">
-                        Enter the Paragrapgh here:
-                    </h3>
-                    <div contenteditable="true" class="Paragraph">
-
-                    </div>
+                <h3 style="margin-left: 10px;font-family: 'Courier New', Courier, monospace; color:#DBC2A6">
+                        Enter the Paragraph here:
+                </h3>
+                <form action="/gen" method="post" style="display: flex;">
+                    
+                    <textarea class="Paragraph" name="Paragraph"></textarea>
+                    <input type="submit" style="border-radius: 100px; border:None; color: #414A37; background-color: #DBC2A6; height: 30px;" value="ᯓ➤">
                 </form>
+
             </div>
             <div class="Ques">
-                
+                {{Quess}}
             </div>
         
     </body>
